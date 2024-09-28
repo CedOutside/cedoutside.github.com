@@ -1,0 +1,56 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Changer pour éviter le centrage vertical */
+    height: 100vh;
+    margin: 0;
+    font-family: Impact;
+    background-color: #f5f3f2;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Pour garder le contenu en haut */
+    width: 100%; /* S'assurer que le conteneur prend toute la largeur */
+}
+
+#quote {
+    font-size: 5em;
+}
+
+#bouton {
+    padding: 20px;
+    font-size: 1em;
+    color: rgb(0, 0, 0);
+    background-color: #ffe81f;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    width: 50%;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#bouton:hover {
+    background-color: #aa9a08;
+}
+
+#historique {
+    display: flex; /* Utiliser flexbox pour une disposition horizontale */
+    flex-wrap: wrap; /* Permettre aux éléments de passer à la ligne */
+    margin-top: 20px; /* Espace entre le bouton et l'historique */
+    width: 100%; /* Prend toute la largeur disponible */
+    list-style-type: none; /* Enlève les puces de la liste */
+    padding: 0; /* Enlève le padding par défaut */
+}
+
+#historique li {
+    margin: 5px; /* Espace entre les éléments de la liste */
+    padding: 10px; /* Espace à l'intérieur de chaque élément */
+    background-color: #ffe81f; /* Couleur de fond pour chaque droïde */
+    border-radius: 5px; /* Coins arrondis */
+}
